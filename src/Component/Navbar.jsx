@@ -4,8 +4,8 @@ import cartLogo from "../assets/shopping-cart.png"
 
 const Navbar = () => {
     return (
-        <div className='w-7xl mx-auto'>
-            <div className="navbar bg-base-100 shadow-xs">
+        <div className='w-6xl mx-auto '>
+            <div className="navbar bg-base-100 shadow-xs ">
   <div className="navbar-start">
   
     <p className="text-3xl font-bold bg-linear-to-r from-cyan-600 to-blue-600 text-transparent bg-clip-text">DigiTools</p>
