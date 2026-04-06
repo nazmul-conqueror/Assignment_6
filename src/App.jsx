@@ -2,6 +2,7 @@
 import './App.css'
 import HeroSection from './Component/HeroSection'
 import Navbar from './Component/Navbar'
+import RatingSection from './Component/RatingSection'
 
 function App() {
  
@@ -11,6 +12,7 @@ function App() {
    
     <Navbar/>
     <HeroSection/>
+    <RatingSection/>
     
 
    

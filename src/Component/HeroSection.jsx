@@ -3,8 +3,8 @@ import bannerImg from "../assets/banner.png"
 
 const HeroSection = () => {
     return (
-        <div className="relative min-h-162 flex items-center overflow-hidden">
-            <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center relative z-10">
+        <div className=" relative min-h-162 flex items-center overflow-hidden">
+            <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center relative ">
                 {/* Left Content */}
                 <div className="space-y-4">
                     <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/30 text-blue-600 text-sm font-medium px-5 py-2 rounded-full">
