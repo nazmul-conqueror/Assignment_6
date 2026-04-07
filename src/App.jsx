@@ -31,8 +31,8 @@ function App() {
     <>
    
     <Navbar carts={carts}/>
-    <HeroSection/>
-    <RatingSection/>
+    
+    
     
     <div>
         {/* name of each tab group should be unique */}
@@ -44,14 +44,36 @@ function App() {
       </div>
 
    
-   {activeTab === "product" && <ProductSection productPromise={productPromise} carts= {carts} setCarts = {setCarts} />}
+   {activeTab === "product" && (
+    <>
+
+    <HeroSection/>
+    <RatingSection/>
+    <div>
+        {/* name of each tab group should be unique */}
+<div className="tabs tabs-box justify-center bg-transparent">
+  <input onClick={()=>setActiveTab("product")} type="radio" name="my_tabs_1" className="tab  rounded-full w-40" aria-label="Products" defaultChecked/>
+  <input onClick={()=>setActiveTab("cart")} type="radio" name="my_tabs_1" className="tab rounded-full w-40" aria-label={`Cart (${carts.length})`}  />
+ 
+</div>
+      </div>
+
+    <ProductSection productPromise={productPromise} carts= {carts} setCarts = {setCarts} /> 
+    <GetStarted/>
+    <Pricing/>
+
+    </>
+    )}
    
-   {activeTab === "cart" && <Cart carts = {carts} setCarts={setCarts}/>}
+   {activeTab === "cart" && (<>
+   <Cart carts = {carts} setCarts={setCarts}/>
+      
+    </>)}
  
     
 
-  <GetStarted/>
-  <Pricing/>
+  
+  
   <Footer/>
      
     </>
