@@ -2,12 +2,12 @@ import React from 'react';
 
 const GetStarted = () => {
     return (
-        <div className='max-w-6xl mx-auto mb-10 mt-4'>
+        <div className='max-w-6xl mx-auto mb-10'>
             <div className='text-center'>
                 <h2 className='text-4xl font-bold'>Get Started in 3 Steps</h2>
                 <p className='text-gray-400'>Start using premium digital tools in minutes, not hours.</p>
-                <div className='grid grid-cols-3 gap-10'>
-                    <div className="card w-96 bg-base-100 card-xl shadow-sm relative">
+                <div className='grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-5'>
+                    <div className="card bg-base-100 card-xl shadow-sm relative">
                         {/* Top Right Corner Badge */}
                         <div className="absolute top-4 right-4 w-10 h-10 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold text-sm shadow-md">
                             01
@@ -23,7 +23,7 @@ const GetStarted = () => {
 
                         </div>
                     </div>
-                    <div className="card w-96 bg-base-100 card-xl shadow-sm relative">
+                    <div className="card bg-base-100 card-xl shadow-sm relative">
                         {/* Top Right Corner Badge */}
                         <div className="absolute top-4 right-4 w-10 h-10 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold text-sm shadow-md">
                             02
@@ -35,12 +35,12 @@ const GetStarted = () => {
                             <div className=''>
                                 <h2 className="text-2xl font-bold text-center">Choose Products</h2>
                                 <p>Browse our catalog and select the tools
-that fit your needs.</p>
+                                    that fit your needs.</p>
                             </div>
 
                         </div>
                     </div>
-                    <div className="card w-96 bg-base-100 card-xl shadow-sm relative">
+                    <div className="card bg-base-100 card-xl shadow-sm relative">
                         {/* Top Right Corner Badge */}
                         <div className="absolute top-4 right-4 w-10 h-10 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold text-sm shadow-md">
                             03
@@ -51,8 +51,8 @@ that fit your needs.</p>
                             </div>
                             <div className=''>
                                 <h2 className="text-2xl font-bold text-center">Start Creating</h2>
-                                <p>Download and start using your premium 
-tools immediately.</p>
+                                <p>Download and start using your premium
+                                    tools immediately.</p>
                             </div>
 
                         </div>

@@ -7,6 +7,8 @@ import ProductSection from './Component/ProductSection'
 import RatingSection from './Component/RatingSection'
 import Cart from './Component/Cart'
 import GetStarted from './Component/getStarted'
+import Pricing from './Component/Pricing'
+import Footer from './Component/Footer'
 
  const getProducts = async () =>{
     const res = await fetch('/digitools.json')
@@ -49,6 +51,8 @@ function App() {
     
 
   <GetStarted/>
+  <Pricing/>
+  <Footer/>
      
     </>
   )
