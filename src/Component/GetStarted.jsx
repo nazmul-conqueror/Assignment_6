@@ -6,7 +6,7 @@ const GetStarted = () => {
             <div className='text-center'>
                 <h2 className='text-4xl font-bold'>Get Started in 3 Steps</h2>
                 <p className='text-gray-400'>Start using premium digital tools in minutes, not hours.</p>
-                <div className='grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-5'>
+                <div className='  grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-10 mt-5'>
                     <div className="card bg-base-100 card-xl shadow-sm relative">
                         {/* Top Right Corner Badge */}
                         <div className="absolute top-4 right-4 w-10 h-10 bg-linear-to-br from-purple-500 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold text-sm shadow-md">
