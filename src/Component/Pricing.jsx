@@ -41,7 +41,7 @@ const Pricing = () => {
         </div>
 
         {/* Pro (Highlighted) */}
-        <div className="card text-white shadow-xl p-6 rounded-2xl relative bg-gradient-to-r from-purple-600 to-indigo-600 scale-105">
+        <div className="card text-white shadow-xl p-6 rounded-2xl relative bg-linear-to-r from-purple-600 to-indigo-600 scale-105">
           
           {/* Badge */}
           <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-yellow-400 text-black text-xs px-3 py-1 rounded-full">

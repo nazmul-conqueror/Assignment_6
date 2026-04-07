@@ -2,7 +2,7 @@ import React from 'react';
 
 const RatingSection = () => {
     return (
-       <div className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-8 md:py-12 rounded-md mb-10 md:mb-20 px-4">
+       <div className="bg-linear-to-r from-indigo-600 to-purple-600 text-white py-8 md:py-12 rounded-md mb-10 md:mb-20 px-4">
       
       <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 text-center divide-y sm:divide-y-0 sm:divide-x divide-white/30">
         
