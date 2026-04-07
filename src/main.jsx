@@ -6,6 +6,7 @@ import { ToastContainer } from 'react-toastify'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <BrowserRouter basename="/Assignment_6"></BrowserRouter>
     <App />
     <ToastContainer/>
   </StrictMode>,
