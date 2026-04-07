@@ -19,14 +19,15 @@ import Cart from './Component/Cart'
 
 function App() {
   const [activeTab, setActiveTab] = useState("product")
-  console.log(activeTab)
+  const [carts, setCarts] = useState([]);
+  
   
   return (
    
 
     <>
    
-    <Navbar/>
+    <Navbar carts={carts}/>
     <HeroSection/>
     <RatingSection/>
     
@@ -34,15 +35,15 @@ function App() {
         {/* name of each tab group should be unique */}
 <div className="tabs tabs-box justify-center bg-transparent">
   <input onClick={()=>setActiveTab("product")} type="radio" name="my_tabs_1" className="tab  rounded-full w-40" aria-label="Products" defaultChecked/>
-  <input onClick={()=>setActiveTab("cart")} type="radio" name="my_tabs_1" className="tab rounded-full w-40" aria-label="Cart"  />
+  <input onClick={()=>setActiveTab("cart")} type="radio" name="my_tabs_1" className="tab rounded-full w-40" aria-label={`Cart (${carts.length})`}  />
  
 </div>
       </div>
 
    
-   {activeTab === "product" && <ProductSection productPromise={productPromise} />}
+   {activeTab === "product" && <ProductSection productPromise={productPromise} carts= {carts} setCarts = {setCarts} />}
    
-   {activeTab === "cart" && <Cart productPromise={productPromise}/>}
+   {activeTab === "cart" && <Cart carts = {carts} setCarts={setCarts}/>}
  
     
 
