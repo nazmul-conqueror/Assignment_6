@@ -41,8 +41,8 @@ function App() {
     <div>
         {/* name of each tab group should be unique */}
 <div className="tabs tabs-box justify-center bg-transparent">
-  <input onClick={()=>setActiveTab("product")} type="radio" name="my_tabs_1" className="tab  rounded-full w-40" aria-label="Products" defaultChecked/>
-  <input onClick={()=>setActiveTab("cart")} type="radio" name="my_tabs_1" className="tab rounded-full w-40" aria-label={`Cart (${carts.length})`}  />
+  <input onClick={()=>setActiveTab("product")} type="radio" name="my_tabs_1" className={"tab  rounded-full w-40"} aria-label="Products" defaultChecked/>
+  <input onClick={()=>setActiveTab("cart")} type="radio" name="my_tabs_1" className={"tab rounded-full w-40 "} aria-label={`Cart (${carts.length})`}  />
  
 </div>
       </div>
