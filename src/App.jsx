@@ -6,6 +6,7 @@ import Navbar from './Component/Navbar'
 import ProductSection from './Component/ProductSection'
 import RatingSection from './Component/RatingSection'
 import Cart from './Component/Cart'
+import GetStarted from './Component/getStarted'
 
  const getProducts = async () =>{
     const res = await fetch('/digitools.json')
@@ -47,7 +48,7 @@ function App() {
  
     
 
-   
+  <GetStarted/>
      
     </>
   )

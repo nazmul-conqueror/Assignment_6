@@ -24,7 +24,10 @@ const ProductSection = ({productPromise, carts, setCarts}) => {
             </div>
 
         </div>
+
+        
     );
+    
 };
 
 export default ProductSection;
