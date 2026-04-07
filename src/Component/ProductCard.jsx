@@ -1,11 +1,19 @@
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 
 const ProductCard = ({ product, carts, setCarts }) => {
     const [buyNow, setBuyNow] = useState(false)
 
     const handleBuyNow = () =>{
         setBuyNow(true)
+        const isFound = carts.find((item) => item.id === product.id)
+        if(isFound){
+            toast.error("Item Already in Cart")
+            return;
+        }
+
         setCarts([...carts ,product])
+        toast.success("Item Added To Cart")
 
 
     }
@@ -51,8 +59,12 @@ const ProductCard = ({ product, carts, setCarts }) => {
                     ))}
                 </ul>
 
-                <button onClick={handleBuyNow} className=" btn btn-primary w-full py-3 rounded-full text-white font-semibold">
+                <button onClick={handleBuyNow} className={`btn btn-primary w-full py-3 rounded-full text-white font-semibold ${
+                    buyNow ? "btn-success" : "btn-primary"
+                }`}>
                     {buyNow ? "Added to Cart": "Buy Now" }
+                   
+
                 </button>
 
             </div>
