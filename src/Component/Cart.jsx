@@ -15,7 +15,7 @@ const handleDelete = (item) =>{
 
 
     return (
-        <div className='mb-10 w-6xl mx-auto '>
+        <div className='mb-10 max-w-6xl mx-auto px-4'>
            <h1 className='text-xl font-bold mb-4'>Your Cart</h1>
            {
             carts.length === 0 ? <p className='text-3xl text-center p-5'>Cart is Empty</p> : 
@@ -26,7 +26,7 @@ const handleDelete = (item) =>{
                   
                 <div key ={item.id}>
                    
-                    <div className='flex justify-between items-center px-3 py-3 mb-5 shadow-sm '>
+                    <div className='flex flex-col sm:flex-row justify-between items-center px-3 py-3 mb-5 shadow-sm '>
                       
                        <div className='flex items-center gap-5 '>
                         <p>{item.icon}</p>
