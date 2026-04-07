@@ -2,7 +2,7 @@ import React from 'react';
 import cartLogo from "../assets/shopping-cart.png"
 
 
-const Navbar = () => {
+const Navbar = ({carts}) => {
     return (
         <div className='w-6xl mx-auto '>
             <div className="navbar bg-base-100 shadow-xs ">
@@ -20,7 +20,14 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end gap-3">
-    <span><img src={cartLogo} alt="" /></span>
+      <div className="relative">
+    <img src={cartLogo} alt="" className="w-6" />
+    
+    {/* Cart Count Badge */}
+    <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs px-1 py-0.4 rounded-full">
+      {`${(carts.length)}`}
+    </span>
+  </div>
     <p>Login</p>
     <a className="btn btn-primary rounded-full">Get Started</a>
   </div>
